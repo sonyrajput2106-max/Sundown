@@ -1,0 +1,100 @@
+@font-face {
+    font-family:neu ;
+    src: url(./NeueHaasGrotDisp-65Medium-Trial.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:neu ;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+#nav{
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navpart2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.navpart2 a{
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a;
+    border-radius: 50px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    z-index: 9;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+.navpart2 a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    left: 0;
+    bottom: -199%;
+    border-radius: 50%;
+transition: all ease 0.4s;
+}
+
+.navpart2 a:hover::after{
+bottom: 0;
+border-radius: 0;
+
+}
+
+.navpart2 a:hover {
+color: #f9faf7;
+}
+
+#centre{
+    height: 65vh;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    align-items:flex-end ;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 2.5vw;
+}
+
+
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    
+}
+
+#centre h1{
+    font-size: 10vw;
+    text-align: right;
+    line-height:8vw ;
+
+}
